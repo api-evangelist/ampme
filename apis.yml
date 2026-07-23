@@ -1,7 +1,23 @@
 aid: ampme
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ampme.png
 name: AmpMe
-description: AmpMe is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: AmpMe is a mobile application that synchronizes music playback across multiple smartphones
+  to create a collective, portable sound system. Users connect friends' phones together so their device
+  speakers play the same track in sync, amplifying the audio for parties and gatherings. The app supports
+  streaming sources such as Spotify, YouTube, SoundCloud, and Deezer, and runs natively on iOS and Android.
+  AmpMe was surfaced as a portfolio company of 500 Global and added to the API Evangelist network for
+  enrichment; it is a consumer mobile product that does not currently publish a public developer API.
 url: https://raw.githubusercontent.com/api-evangelist/ampme/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,6 +30,12 @@ created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- Music
+- Audio
+- Streaming
+- Consumer
+- Mobile
+- Entertainment
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +43,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/ampme-domain-security.yml
 - type: Website
   url: https://ampme.com
+- type: PrivacyPolicy
+  url: https://ampme.com/privacy
+- type: TermsOfService
+  url: https://ampme.com/terms
+- type: Support
+  url: https://ampme.com/faq
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
